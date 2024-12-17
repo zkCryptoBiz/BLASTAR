@@ -27,7 +27,7 @@ function blastar() {
   SH = 5;
   SC = 0;
   screen(2);
-  print(Array(14).join(" ") + "BLASTAR");
+  print(Array(14).join(" ") + "LASER");
   blastarTune();
 }
 
@@ -54,7 +54,7 @@ function promptForInstructions() {
   cls();
   // TODO: double check number of spaces.
   locate(10, 5);
-  print("             BLASTAR");
+  print("             LASER");
   print("");
   print("          DO YOU NEED INSTRUCTIONS");
   print("                 (Y/N)");
@@ -282,7 +282,7 @@ function nextShip() {
   } else {
     cls();
     locate(0, 0);
-    print("                BLASTAR");
+    print("                LASER");
     print("");
     print("             FLEET DESTROYED");
     print("");
