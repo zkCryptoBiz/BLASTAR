@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>$Blastar on Solana</title>
+    <link rel="icon" type="image/x-icon" href="img/blastar0.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/game.js"></script>
+    <meta name="theme-color" content="#000000" />
+  </head>
+  <body id="body" class="bg" onload="initBasicEnvironment(); blastar()">
+    <div id="share-card" class="modal-overlay hidden">
+      <div class="modal">
+        <div class="card">
+          <h2>
+            You scored: <span id="score" class="p-color">0</span>
+            <span class="p-color">points</span>
+          </h2>
+          <h3>
+            There is a total prize pool of 1,000,000 $BLASTAR set aside for the
+            first competition.
+          </h3>
+          <h3>
+            In order to qualify, players must share their score on X via the
+            link below.
+          </h3>
+          <h3>Winners will be selected from these entries.</h3>
+          <div>
+            <a id="share-tweet" class="button" href="index.html#" target="_blank">
+              Share To Win
+            </a>
+            <button type="button" class="close-btn" onclick="hideCard();">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <center>
+      <div id="main-container">
+        <div>
+          <img class="logo" src="img/logo.png" />
+        </div>
+        <div id="social-container">
+          <a
+            target="_blank"
+            id="origin"
+            href="https://archive.org/details/blastar-elon-musk-spectravideo"
+            class="social-link"
+            >ORIGIN</a
+          >
+          <a
+            target="_blank"
+            id="origin"
+            href="whitepaper.pdf"
+            class="social-link"
+            >whitepaper</a
+          >
+          <a
+            target="_blank"
+            href="https://x.com/blastarsolana"
+            class="social-link"
+          >
+            <img class="social-img" src="img/x.png" />
+          </a>
+          <a target="_blank" href="http://t.me/blastarsol" class="social-link">
+            <img class="social-img" src="img/tg.png" />
+          </a>
+          <a
+            target="_blank"
+            href="https://dexscreener.com/solana/fb8fjufgqyeqv17kcfy7ajur4yzb2d2quhzmxdkcvyq7"
+            class="social-link"
+          >
+            <img id="dex" class="social-img" src="img/dex.png" />
+          </a>
+          <a>
+            <img />
+          </a>
+        </div>
+      </div>
+      <h3>CA: 22ez74v89qiJzES4FhhSUngSSAp9GP2aoArBVDZVxR1r</h3>
+      <img src="img/blastar0.ico" id="sprite0" style="display: none" />
+      <img src="img/blastar1.ico" id="sprite2" style="display: none" />
+      <img src="img/blastar2.ico" id="sprite3" style="display: none" />
+      <img src="img/blastar3.ico" id="sprite4" style="display: none" />
+      <img src="img/blastar4.ico" id="sprite5" style="display: none" />
+      <img src="img/blastar5.ico" id="sprite6" style="display: none" />
+      <img src="https://blastar.wtf/img/dragon.png" id="dragon" style="display: none" />
+      <div>
+        <canvas height="600" width="750" id="canvas" style="width: 750px"
+          >[YOUR BROWSER IS NOT SUPPORTED]</canvas
+        >
+        <br /><audio id="speaker0">
+          [Audio is not supported in your browser]</audio
+        ><audio id="speaker1"></audio>
+        <label
+          ><input type="checkbox" id="muted" onclick="toggleMute(this)" />
+          MUTE</label
+        ><br /><br />
+      </div>
+      <table id="gamepad">
+        <tr>
+          <td>
+            <input type="button" value="Y" id="yes" />
+            <input type="button" value="N" id="no" />
+            <br />
+            <br />
+            <input
+              width="100%"
+              type="button"
+              value="      [spacebar]       "
+              id="spcbar"
+            />
+          </td>
+          <td>
+            <input type="button" value="^" id="up" />
+            <br />
+            <br />
+            <input type="button" value="<" id="left" />
+            <input type="button" value="v" id="down" />
+            <input type="button" value=">" id="right" />
+          </td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      <h2 class="heading">Instructions for the web version</h2>
+      <div class="main-text">
+        Use the arrow keys to move your ship and the space bar to shoot.
+      </div>
+      <h2 class="heading">ABOUT BLASTER</h2>
+      <div class="main-text">
+        <p>
+          Blastar was a game written by Elon Musk in 1984 (at the age of 12).
+          The source code was published in a magazine and he received $500 for
+          it. Ashlee Vance's Elon Musk: Tesla, SpaceX and the Quest for a
+          Fantastic Future includes a reproduction of the page from the
+          publication where it appeared. This version is based on that listing.
+        </p>
+        <p>Elon has since moved beyond 8-bit spaceships.</p>
+      </div>
+    </center>
+  </body>
+</html>

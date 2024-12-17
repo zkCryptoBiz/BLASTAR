@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "Upheaval";
+  src: url("upheaval.ttf");
+}
+
+body {
+  font-family: "Upheaval";
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("../img/bg.png");
+
+  min-height: 100vh;
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modal-overlay {
+  position: fixed;
+  z-index: 1;
+  min-width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.modal {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.close-btn {
+  font-size: 1em;
+  font-family: "Upheaval";
+  margin-left: 1em;
+  padding: 0.5em 2em;
+  background-color: #ef4f4f;
+  color: white;
+  border: none;
+  text-decoration: underline;
+}
+
+.card {
+  background-color: black;
+  border-radius: 8px;
+  max-width: 750px;
+  max-height: 400px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button {
+  background-color: #4fdfef;
+  color: white;
+  text-decoration: underline;
+  padding: 0.5em 2em;
+}
+
+.p-color {
+  color: #4fdfef;
+}
+
+.logo {
+  max-width: 400px;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+canvas {
+  font-size: 24px;
+  border: 1px #fff solid;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#origin {
+  text-decoration: underline;
+  font-size: 2em;
+}
+
+#social-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+td {
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+
+div {
+  margin: 0 auto;
+}
+
+input[type="button"] {
+  height: 120px;
+  width: 120px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  color: white;
+  font-size: 2em;
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+}
+
+input#spcbar {
+  width: 268px;
+}
+
+.heading {
+  margin-top: 2em;
+}
+
+.social-img {
+  height: 24px;
+}
+
+#dex {
+  height: 30px;
+}
+
+.main-text {
+  max-width: 750px;
+  font-size: 1.5em;
+}
